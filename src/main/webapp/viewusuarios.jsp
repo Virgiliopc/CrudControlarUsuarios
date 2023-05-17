@@ -18,7 +18,16 @@
 	%>
 	
 	<table>
-		<tr><th>ID</th><th>Name</th><th>Password</th><th>E-mail</th><th>Sexo</th><th>País</th>
+		<tr><th>ID</th><th>Name</th><th>Password</th><th>E-mail</th><th>Sexo</th><th>País</th></tr>
+		<c:forEach items="${list}" var="usuario">
+			<tr>
+				<td>${usuario.getId()}</td>
+				<td>${usuario.getName()}</td>
+				<td>${usuario.getPassword()}</td>
+				<td>${usuario.getSexo()}</td>
+				<td>${usuario.getPais()}</td>
+			</tr>
+		</c:forEach>
 	</table>
 </body>
 </html>
