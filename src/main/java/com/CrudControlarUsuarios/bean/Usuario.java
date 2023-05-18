@@ -3,7 +3,7 @@ package com.CrudControlarUsuarios.bean;
 public class Usuario {
 
 	private int id;
-	private String name;
+	private String nome;
 	private String password;
 	private String email;
 	private String sexo;
@@ -15,11 +15,11 @@ public class Usuario {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public String getNome() {
+		return nome;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	public String getPassword() {
 		return password;
