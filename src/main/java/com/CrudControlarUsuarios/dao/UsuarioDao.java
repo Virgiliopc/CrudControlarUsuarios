@@ -1,4 +1,4 @@
-package com.ControlarUsuarios.dao;
+package com.CrudControlarUsuarios.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.ControlarUsuarios.bean.Usuario;
+import com.CrudControlarUsuarios.bean.Usuario;
 import com.mysql.jdbc.PreparedStatement;
 
 public class UsuarioDao {
@@ -16,7 +16,7 @@ public class UsuarioDao {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/ControlarUsuarios", "root", "");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3307/ControlarUsuarios", "root", "");
 		} catch(Exception e) {
 			System.out.println(e);
 		}

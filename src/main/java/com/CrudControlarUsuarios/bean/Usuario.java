@@ -1,4 +1,4 @@
-package com.ControlarUsuarios.bean;
+package com.CrudControlarUsuarios.bean;
 
 public class Usuario {
 
