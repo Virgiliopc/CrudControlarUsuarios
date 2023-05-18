@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +5,10 @@
 <title>Visualização de Usuários</title>
 </head>
 <body>
-	<%@ page import="com.ControlarUsuarios.dao.UsuarioDao, com.ControlarUsuarios.bean.*, java.util.* " %>
+	<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>*
+    
+	<%@ page import="com.CrudControlarUsuarios.dao.UsuarioDao, com.CrudControlarUsuarios.bean.*, java.util.* " %>
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>	
 	
 	<h1>Listagem de Usuários</h1>
