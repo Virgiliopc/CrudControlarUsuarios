@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Visualização de Usuários</title>
+	<meta charset="ISO-8859-1">
+	<title>Visualização de Usuários</title>
 </head>
 <body>
 	<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>*
+    pageEncoding="ISO-8859-1"%>
     
 	<%@ page import="com.CrudControlarUsuarios.dao.UsuarioDao, com.CrudControlarUsuarios.bean.*, java.util.* " %>
-	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>	
+	<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>	
 	
 	<h1>Listagem de Usuários</h1>
 	
@@ -18,13 +18,21 @@
 	request.setAttribute("list", list);
 	%>
 	
-	<table>
-		<tr><th>ID</th><th>Name</th><th>Password</th><th>E-mail</th><th>Sexo</th><th>País</th></tr>
+	<table border="1">
+		<tr>
+			<th>ID</th>
+			<th>Nome</th>			
+			<th>Password</th>
+			<th>E-mail</th>
+			<th>Sexo</th>
+			<th>País</th>
+		</tr>
 		<c:forEach items="${list}" var="usuario">
 			<tr>
 				<td>${usuario.getId()}</td>
-				<td>${usuario.getName()}</td>
+				<td>${usuario.getNome()}</td>				
 				<td>${usuario.getPassword()}</td>
+				<td>${usuario.getEmail()}</td>
 				<td>${usuario.getSexo()}</td>
 				<td>${usuario.getPais()}</td>
 			</tr>
