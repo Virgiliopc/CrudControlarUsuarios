@@ -16,7 +16,7 @@ public class UsuarioDao {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3307/ControlarUsuarios", "root", "");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/crudcontrolarusuarios", "root", "");
 		} catch(Exception e) {
 			System.out.println(e);
 		}
@@ -34,7 +34,7 @@ public class UsuarioDao {
 			while(rs.next()) {
 				Usuario usuario = new Usuario();
 				usuario.setId(rs.getInt("id"));
-				usuario.setName(rs.getString("name"));
+				usuario.setNome(rs.getString("nome"));
 				usuario.setPassword(rs.getString("password"));
 				usuario.setSexo(rs.getString("sexo"));
 				usuario.setPais(rs.getString("pais"));
