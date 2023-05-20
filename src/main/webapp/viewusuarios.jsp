@@ -44,6 +44,5 @@
 	</table>
 	<br>
 		<a href="">Adicionar novo Usuário</a>
-	</br>
 </body>
 </html>
