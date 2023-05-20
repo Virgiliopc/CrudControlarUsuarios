@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<%@ page import="com.CrudControlarUsuarios.bean.Usuario, com.CrudControlarUsuarios.dao.UsuarioDao"%>
+	<%@page import="com.CrudControlarUsuarios.bean.Usuario, com.CrudControlarUsuarios.dao.UsuarioDao"%>
 
 	<%
 	String id = request.getParameter("id");
@@ -61,6 +61,5 @@
 			</tr>
 		</table>
 	</form>
-
 </body>
 </html>
