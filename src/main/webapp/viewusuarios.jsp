@@ -38,11 +38,11 @@
 				<td>${usuario.getSexo()}</td>
 				<td>${usuario.getPais()}</td>
 				<td><a href="editform.jsp?id=${usuario.getId()}">Editar</a></td>
-				<td><a href="">Excluir</a></td>
+				<td><a href="#">Excluir</a></td>
 			</tr>
 		</c:forEach>
 	</table>
 	<br>
-		<a href="">Adicionar novo Usuário</a>
+		<a href="#">Adicionar novo Usuário</a>
 </body>
 </html>

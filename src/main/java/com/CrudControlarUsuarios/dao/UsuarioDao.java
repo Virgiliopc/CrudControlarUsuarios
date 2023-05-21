@@ -28,7 +28,7 @@ public class UsuarioDao {
 		
 		try {
 			Connection con = getConnetion();
-			PreparedStatement ps = (PreparedStatement) con.prepareStatement("UPDATE usuario SET nome=?, password=?, email=?, sexo=?, pais=?, WHERE id=?");
+			PreparedStatement ps = (PreparedStatement) con.prepareStatement("UPDATE usuario SET nome=?, password=?, email=?, sexo=?, pais=? WHERE id=?");
 			
 			ps.setString(1,  u.getNome());
 			ps.setString(2, u.getPassword());
