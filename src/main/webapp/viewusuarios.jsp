@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="ISO-8859-1">
+	<meta charset="UTF-8">
 	<title>Visualização de Usuários</title>
 </head>
 <body>
@@ -43,6 +43,6 @@
 		</c:forEach>
 	</table>
 	<br>
-		<a href="addusuarioform.jsp#">Adicionar novo Usuário</a>
+		<a href="addusuarioform.jsp">Adicionar novo Usuário</a>
 </body>
 </html>
