@@ -23,6 +23,25 @@ public class UsuarioDao {
 		return con;
 	}
 	
+	public static int salvarUsuario(Usuario u) {
+		int status = 0;
+		
+		try {
+			Connection con = getConnetion();
+			PreparedStatement ps = (PreparedStatement) con.prepareStatement("INSERT INTO usuario (nome, password, sexo, pais) VALUES (?, ?, ?, ?, ?)");
+			ps.setString(1,  u.getNome());
+			ps.setString(2, u.getPassword());
+			ps.setString(3, u.getEmail());
+			ps.setString(4, u.getSexo());
+			ps.setString(5, u.getPais());
+			ps.setInt(6, u.getId());
+			status = ps.executeUpdate();
+		} catch(Exception e) {
+			System.out.println(e);
+		}
+		return status;
+	}
+	
 	public static int updateUsuario(Usuario u) {
 		int status = 0;
 		
